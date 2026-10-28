@@ -1,6 +1,6 @@
 (() => {
   const cfg = window.BYD_CONFIG || {};
-  const configured = cfg.SUPABASE_URL && cfg.SUPABASE_ANON_KEY && !cfg.SUPABASE_URL.includes('PEGA_AQUI') && !cfg.SUPABASE_ANON_KEY.includes('PEGA_AQUI');
+  const configured = cfg.SUPABASE_URL && cfg.SUPABASE_ANON_KEY && !cfg.SUPABASE_URL.includes('sb_publishable_zG16lhUHVtNVJmHVfDqM6Q_cCqzZ_Cu') && !cfg.SUPABASE_ANON_KEY.includes('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVydmhnY3NoYW1oaWZveHlpanJmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTMyMTc4ODksImV4cCI6MjEwODc5Mzg4OX0.O9CK1ij8pH8kEe62S4U942m1gyNMSy0oZQ42guqpFL4');
   const $ = id => document.getElementById(id);
   const today = new Date(); const localDate = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;
   document.querySelectorAll('input[type=date]').forEach(x => x.value = localDate);
